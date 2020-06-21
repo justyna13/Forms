@@ -1,0 +1,46 @@
+@import 'abstracts/topography';
+@import 'abstracts/mixins';
+@import 'abstracts/colors';
+
+@import 'layouts/page';
+@import 'layouts/brand';
+
+@import 'base/topography';
+@import 'components/cards';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+
+body {
+
+
+  background: {
+    image: url("../images/bg.jpg");
+    repeat: no-repeat;
+    size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .container {
+    grid-template-columns: 5em repeat(2, 1fr) 5em;
+    grid-template-rows: auto;
+  }
+
+  .card {
+
+    &__register,
+    &__sign-in,
+    &__recover,
+    &__send-email,
+    &__subscribe {
+      grid-column: 2 / 4;
+      grid-row: auto /auto;
+      margin-bottom: 5em;
+    }
+
+  }
+}
+
+
+

@@ -1,0 +1,226 @@
+.container {
+  display: grid;
+  grid: repeat(10, 0.25fr)/3em minmax(0.5em, 0.5fr) 5em minmax(0.5em, 0.5fr) 3em;
+  grid-row-gap: 0; }
+
+.brand {
+  color: #afafaf;
+  line-height: 0.2;
+  display: grid;
+  grid: auto-flow/minmax(1em, 1fr) repeat(2, 0.5fr) minmax(1em, 1fr);
+  margin: 20px auto;
+  grid-column-gap: 0; }
+  .brand__image {
+    grid-column: 2 / 3; }
+    .brand__image img {
+      opacity: .5;
+      float: right;
+      width: 120px; }
+  .brand__logo {
+    grid-column: 3 / 4;
+    opacity: .8;
+    padding-left: 10px; }
+  .brand .company__name {
+    font-size: 3rem; }
+  .brand--small {
+    grid-row: 9/ 10;
+    grid-column: 4/ 5;
+    display: flex;
+    font-size: 1.5em; }
+
+p {
+  color: #afafaf; }
+
+.card {
+  padding: 0;
+  background: #fff;
+  height: 85%;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3); }
+  .card__wrapper {
+    display: grid;
+    height: 80%; }
+    .card__wrapper h3 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5em; }
+  .card__register {
+    grid-column: 2 / 3;
+    grid-row: 1/ 5; }
+  .card__sign-in {
+    grid-column: 4/ 5;
+    grid-row: 1 / 4; }
+  .card__recover {
+    grid-column: 4/ 5;
+    grid-row: 4 / 7; }
+  .card__send-email {
+    grid-column: 2 / 3;
+    grid-row: 6/ 10; }
+  .card__subscribe {
+    grid-column: 4/ 5;
+    grid-row: 7 / 8; }
+
+form {
+  background: #fff;
+  padding: 1em;
+  box-sizing: border-box; }
+
+.btn {
+  background: #93d02b;
+  color: #fff;
+  border: 1px solid green;
+  width: 250px;
+  padding: 1em;
+  font-family: "Merriweather", serif;
+  border-radius: 2px;
+  box-shadow: inset -4px -8px 12px 0px rgba(0, 0, 0, 0.2);
+  max-width: 50%;
+  margin: 0 auto; }
+  .btn:hover {
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2); }
+
+.buttons {
+  display: flex;
+  margin: 0 10%; }
+  .buttons .btn {
+    width: 40%;
+    margin: 30px 1em; }
+
+.card {
+  padding: 0;
+  background: #fff;
+  height: 85%;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3); }
+  .card__wrapper {
+    display: grid;
+    height: 80%; }
+    .card__wrapper h3 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5em; }
+  .card__register {
+    grid-column: 2 / 3;
+    grid-row: 1/ 5; }
+  .card__sign-in {
+    grid-column: 4/ 5;
+    grid-row: 1 / 4; }
+  .card__recover {
+    grid-column: 4/ 5;
+    grid-row: 4 / 7; }
+  .card__send-email {
+    grid-column: 2 / 3;
+    grid-row: 6/ 10; }
+  .card__subscribe {
+    grid-column: 4/ 5;
+    grid-row: 7 / 8; }
+
+form {
+  background: #fff;
+  padding: 1em;
+  box-sizing: border-box; }
+
+.form__container form {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box; }
+  .form__container form .form__input {
+    margin: 10px 0;
+    grid-column: 1 / -1; }
+  .form__container form textarea {
+    border: 2px solid #afafaf;
+    width: 92%;
+    margin: 0 auto;
+    padding: 5px 0 0 3px; }
+  .form__container form .input-box {
+    display: grid;
+    position: relative;
+    grid-template-columns: 2em minmax(1em, 1fr) 2em; }
+    .form__container form .input-box .form__input {
+      grid-column: 2 / 3;
+      grid-row: 1/ 1;
+      float: left;
+      border-radius: 0 3px 3px 0;
+      border-top: 2px solid #afafaf;
+      border-bottom: 2px solid #afafaf;
+      border-right: 2px solid #afafaf;
+      padding: 4px 10px; }
+    .form__container form .input-box .fa {
+      grid-column: 1 / 2;
+      grid-row: 1/ 2;
+      font-size: 17px;
+      display: grid;
+      justify-content: center;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      color: #afafaf;
+      padding: 5px 5px;
+      width: 20px;
+      border-radius: 3px 0 0 3px;
+      border-top: 2px solid #afafaf;
+      border-bottom: 2px solid #afafaf;
+      border-left: 2px solid #afafaf; }
+
+.checkbox__wrapper {
+  display: flex;
+  margin: 8px 0 10px;
+  box-sizing: border-box; }
+  .checkbox__wrapper p {
+    margin: 0;
+    font-size: .9em;
+    line-height: 1.7;
+    padding-left: 3px; }
+  .checkbox__wrapper input[type='checkbox'] {
+    position: relative;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    -webkit-appearance: none;
+    outline: none;
+    transition: .5s;
+    box-sizing: border-box; }
+  .checkbox__wrapper input[type='checkbox']:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #afafaf;
+    border-radius: 2px;
+    transition: .5s; }
+  .checkbox__wrapper input:checked[type='checkbox']:before {
+    background: white;
+    transition: .5s;
+    border: 1px solid #afafaf; }
+  .checkbox__wrapper input:checked[type='checkbox']:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    margin: 10% 10%;
+    background: #93d02b;
+    transition: .5s;
+    border-radius: 1.5px; }
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+@media screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: 5em repeat(2, 1fr) 5em;
+    grid-template-rows: auto; }
+
+  .card__register, .card__sign-in, .card__recover, .card__send-email, .card__subscribe {
+    grid-column: 2 / 4;
+    grid-row: auto /auto;
+    margin-bottom: 5em; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="scss/main.css">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="brand">
+    <div class="brand__image"><img src="images/logo.png" alt="lizard logo"/></div>
+
+    <div class="brand__logo">
+        <h1 class="company__name">masteralb</h1>
+        <h3 class="brand__subtitle">creative</h3>
+        <h5 class="company__link">www.masterlb.com</h5>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="card__wrapper card__register">
+        <div>
+            <h3>Register Form</h3>
+
+
+            <div class="card">
+
+                <div class="form__container form__register">
+                    <form>
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-user"></i>
+                                <input class="form__input" type="text" placeholder="Username">
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-lock"></i>
+                                <input class="form__input" type="password" placeholder="Password">
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-lock"></i>
+                                <input class="form__input" type="password" placeholder="Confirm password">
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form__input" type="email" placeholder="Email">
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-map-marker"></i>
+                                <input class="form__input" type="text" placeholder="Your location">
+                            </span>
+                        </label>
+                        <span class="checkbox__wrapper">
+                            <label>
+                                <i class="fa fa-map-marker-alt"></i>
+                                <input type="checkbox">
+                            </label>
+                            <p>I have read and accept the terms of use</p>
+                        </span>
+
+                        <button class="btn" type="button">Sign up</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card__wrapper card__sign-in">
+        <div>
+            <h3>Sign In Form</h3>
+
+            <div class="card">
+                <div class="form__container form__sign-in">
+                    <form>
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-user"></i>
+                                <input class="form__input" type="text" name="username" placeholder="Username">
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-lock"></i>
+                                <input class="form__input" type="password" name="password" placeholder="Password">
+                            </span>
+                        </label>
+
+                        <span class="checkbox__wrapper">
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                            <p>Remember me</p>
+                        </span>
+
+                        <button class="btn" type="button">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card__wrapper card__recover">
+        <div>
+            <h3>Recover Form</h3>
+
+            <div class="card">
+                <div class="form__container form__recover">
+                    <form>
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form__input" type="email" placeholder="Enter your email">
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form__input" type="number" placeholder="Enter your phone number">
+                            </span>
+                        </label>
+
+                        <span class="buttons">
+                            <button class="btn" type="button">Send</button>
+                            <button class="btn btn-done" type="button">Done</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card__wrapper card__send-email">
+        <div>
+            <h3>Send Email</h3>
+
+            <div class="card">
+                <div class="form__container form__send-email">
+                    <form>
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-user"></i>
+                                <input class="form__input" type="text" placeholder="Username">
+                            </span>
+                        </label>
+
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form__input" type="email" placeholder="Email">
+                            </span>
+                        </label>
+
+                        <label>
+                            <textarea name="msg" id="msg"  rows="10" class="form__input"
+                                      placeholder="Type your message..."></textarea>
+                        </label>
+
+                        <button class="btn" type="button">Send Email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card__wrapper card__subscribe">
+        <div>
+            <h3>Subscribe Form</h3>
+
+            <div class="card">
+
+                <div class="form__container form__subscribe">
+                    <form>
+                        <label>
+                            <span class="input-box">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form__input" type="email" placeholder="Enter your Email">
+                            </span>
+                        </label>
+
+                        <span class="buttons">
+                            <button class="btn" type="button">Subscribe</button>
+                            <button class="btn btn-remove" type="button">No, thanks</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand--small brand">
+
+        <div class="brand__image"><img src="images/logo.png" alt="lizard logo"/></div>
+
+        <div class="brand__logo">
+            <h1 class="company__name">masteralb</h1>
+            <h5 class="company__link">www.masterlb.com</h5>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

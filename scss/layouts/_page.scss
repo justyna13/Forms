@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+
+  grid: repeat(10, .25fr) / 3em minmax(.5em, .5fr) 5em minmax(.5em, .5fr) 3em;
+  grid-row-gap: 0;
+}
+

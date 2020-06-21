@@ -1,0 +1,27 @@
+.btn {
+  background: $clr-green-light;
+  color: #fff;
+  border: 1px solid green;
+  width: 250px;
+  padding: 1em;
+  font-family: $ff-body;
+  border-radius: 2px;
+  box-shadow: inset -4px -8px 12px 0px rgba(0, 0, 0, .2);
+  max-width: 50%;
+  margin: 0 auto;
+
+  &:hover {
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, .2);
+  }
+}
+
+.buttons {
+  display: flex;
+  margin: 0 10%;
+
+  .btn {
+    width: 40%;
+    margin: 30px 1em ;
+
+  }
+}
